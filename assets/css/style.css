@@ -1,0 +1,25 @@
+/*
+*
+*	CSS Reset
+*
+*/
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+*
+*	General Rule
+*
+*/
+
+body {
+	background-color: #142b14;
+}
+
+.container {
+	background-color: white;
+}
