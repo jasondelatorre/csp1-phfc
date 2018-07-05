@@ -1,0 +1,169 @@
+/*
+*
+*	CSS Reset
+*
+*/
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+*
+*	General Rule
+*
+*/
+
+body {
+	background-color: #142b14;
+	font-family: "Montserrat";
+}
+
+div[class^="header"]:child {
+	height:100%;
+}
+
+.header-social-media {
+	text-align: right;
+}
+.header-social-media ul {
+	height:100%;
+}
+.header-social-media li {
+	list-style: none;
+	display: inline-block;
+}
+
+
+.main-header {
+	color:#ffc107;
+	background-image: linear-gradient(to bottom, #136906, #14590f, #144913, #153a14, #142b14);
+	height:20vh;
+}
+
+.navi {
+	padding:0;
+}
+
+div.main-stories {
+	margin-top: 10px;
+}
+
+div.image-and-paragraph > img {
+	width:100%;
+}
+
+div.image-and-paragraph > p {
+	margin: 20px 0 0 0;
+	padding: 0 0 0 5px;
+	border-left: 5px solid steelblue;	
+}
+
+hr {
+	margin: 10px 0;
+}
+
+.figure {
+/*	height:90px;
+	width:100%;*/
+	margin-bottom: 3px;
+	padding-right: 3px;
+}
+
+.figure-caption {
+	float:left;
+	position:relative;
+	bottom:50px;
+	right:1px;
+	display: block;
+	margin: 1px 0 1px 1px;
+	padding-left:5px;
+	background-color:red;
+	opacity: 0.5;
+	width:100%;
+	height:41px;
+}
+
+.clear {
+	width:114%;
+}
+
+.clear:after {
+	content:"";
+	clear:both;
+	display: block;
+}
+
+
+div.side-image-container > div.row {
+	width:100%;
+}
+.side-image-container {
+	padding: 0 0 0 5px;
+}
+
+.container {
+	background-color: white;
+}
+
+.football-story {
+	margin:5px;
+}
+
+.card {
+	margin-top: 5px;
+}
+
+#moreStories {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 12px;
+}
+
+div.sub-footer {
+	color:#ffc107;
+	background-color: #142b14;
+	padding-top: 30px;
+}
+
+div.sub-footer li {
+	list-style: none;
+	width: 100%;
+	text-align: center;
+}
+
+.sub-nav {
+	padding:5px;
+}
+
+.figure {
+	margin:0;
+}
+
+.clear {
+	height:0;
+}
+
+.card {
+	width:100%;
+	margin-right: 20px;
+}
+
+.side-card-links {
+	padding-top: 5px;
+}
+
+.sub-footer h3 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.sub-footer li {
+	margin-bottom: 5px;
+}
+
