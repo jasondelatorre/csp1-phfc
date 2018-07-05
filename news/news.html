@@ -8,7 +8,10 @@
 	
 	<!-- Import favicon.ico -->
 	<!-- Import Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+
 	<!-- Import Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	
 	<!-- Import Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -17,66 +20,93 @@
 </head>
 
 <body>
-	<div class="main-header">
-		<div class="container main-header">
+	<div class="container-fluid main-header">
+		<div class="container">
 			<div class="row">
-				<div class="col col-sm-3 header-main-name">
-					<h1>theCornerKick</h1>
+				<div class="col col-sm-4 header-main-name">
+					<!-- <h1>theCornerKick</h1> -->
+					<div class="row">
+						<img src="../assets/image/background/logotitle.png" alt="">
+					</div>
 				</div>
-				<div class="col col-sm-3 header-tag-line">
-					<h5>Your daily dose of football</h5>
+				<div class="col col-sm-2 header-tag-line">
+					<!-- <h5>Your daily dose of football</h5> -->
 				</div>
-				<div class="col col-sm-3 header-subscription">
-					<p>Subscribe <input type="text" name="subscribe" placeholder="Enter Email"> <button>Send</button></p>
+				<div class="col col-sm-4 header-subscription">
+					<div>
+						<input type="text" name="subscribe" placeholder="Enter Email"> 
+						<button>Subscribe!</button>
+					</div>
 				</div>
-				<div class="col col-sm-3 header-social-media">
+				<div class="col col-sm-2 header-social-media">
 					<ul>
-						<li>Facebook</li>
-						<li>Twitter</li>
-						<li>RSS</li>
+						<li>Facebook <i class="fab fa-facebook-square"></i></li>
+						<li>Twitter <i class="fab fa-twitter-square"></i></li>
+						<li>Instagram <i class="fab fa-instagram"></i> </li>
+						<li>RSS <i class="fas fa-rss-square"></i></li>
 					</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col col-sm-12 navi">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active">
-									<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Link</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Dropdown
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link disabled" href="#">Disabled</a>
-								</li>
-							</ul>
-							<form class="form-inline my-2 my-lg-0">
-								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-								<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-							</form>
-						</div>
-					</nav>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="row">
+	<div class="container-fluid main-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-12 navi">
+					<nav class="navbar navbar-expand-lg">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										News
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Play
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Watch
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Store
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<input id="searchBar" type="search" placeholder="Search">
+								<button id="searchIcon" class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+							</form>
+						</div>
+					</nav>
+				</div>
+			</div> 
+		</div>
+	</div>
+
+	<div class="container main-body">
+		<div class="row main-story-borderbottom">
 			<div class="col col-sm-7 main-stories">
 				<div class="image-and-paragraph">
 					<img src="../assets/image/news/carousel/image1.jpg">
@@ -143,8 +173,8 @@
 			</div>
 		</div><!-- Image and text gallery -->
 
-		<hr>
-
+<!-- 		<hr>
+ -->
 		<div class="row">
 			<div class="col col-sm-8">
 				<div class="row football-story" id="ph-football">
@@ -578,98 +608,77 @@
 				<div class="row">
 					<div class="card side-card-links">
 						<img class="card-img-top" src="" alt="Card image cap">
-<!-- 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-							</div> -->
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Ph Football</li>
-								<li class="list-group-item">English Football</li>
-								<li class="list-group-item">Spanish Football</li>
-								<li class="list-group-item">Italian Football</li>
-								<li class="list-group-item">German Football</li>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Ph Football</li>
+							<li class="list-group-item">English Football</li>
+							<li class="list-group-item">Spanish Football</li>
+							<li class="list-group-item">Italian Football</li>
+							<li class="list-group-item">German Football</li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+		</div><!-- Stories - Rightside -->	
+
+		<div class="row">
+			<div class="col col-sm-12">
+				<button type="button" class="btn btn-primary col-sm-12" id="moreStories">More Stories</button>
+			</div>
+		</div> <!-- More Stories Button -->
+
+	</div><!-- /container - row2 -->
+
+	<div class="container-fluid main-footer">
+		<div class="container">
+			<div class="row sub-footer">
+				<div class="col col-sm-3"></div>
+				<div class="col col-sm-9">
+					<div class="row">
+						<div class="col col-sm-3 sub-nav">
+							<h3>News</h3>
+							<ul>
+								<li>Philippine Football</li>
+								<li>English Premier League</li>
+								<li>Spanish La Liga</li>
+								<li>German Bundesliga</li>
+								<li>Italia Serie A</li>
+							</ul>
+						</div>
+						<div class="col col-sm-3 sub-nav">
+							<h3>Play</h3>
+							<ul>
+								<li>Casual For Fun</li>
+								<li>Competitive Tournaments</li>
+								<li>Football Classes</li>
+							</ul>
+						</div>
+						<div class="col col-sm-3 sub-nav">
+							<h3>Watch</h3>
+							<ul>
+								<li>Match Schedules</li>
+								<li>Public Viewing</li>
+								<li>Events</li>
+							</ul>
+						</div>
+						<div class="col col-sm-3 sub-nav">
+							<h3>Store</h3>
+							<ul>
+								<li>Football Merchandise</li>
 							</ul>
 						</div>
 					</div>
-				</div> <!-- Stories - Rightside -->	
-
-			</div>
-
-
-
-			<div class="row">
-				<div class="col col-sm-12">
-					<button type="button" class="btn btn-primary col-sm-12" id="moreStories">More Stories</button>
-				</div>
-			</div> <!-- More Stories Button -->
-
-			<hr>
-
-
-
-		</div><!-- /container - row2 -->
-
-
-
-		<div class="container-fluid">
-			<div class="container">
-				<div class="row sub-footer">
-					<div class="col col-sm-3"></div>
-					<div class="col col-sm-9">
-						<div class="row">
-							<div class="col col-sm-3 sub-nav">
-								<h3 class="text-warning">News</h3>
-								<ul>
-									<li class="text-warning">Philippine Football</li>
-									<li class="text-warning">English Premier League</li>
-									<li class="text-warning">Spanish La Liga</li>
-									<li class="text-warning">German Bundesliga</li>
-									<li class="text-warning">Italia Serie A</li>
-								</ul>
-							</div>
-							<div class="col col-sm-3 sub-nav">
-								<h3 class="text-warning">Play</h3>
-								<ul>
-									<li>Casual For Fun</li>
-									<li>Competitive Tournaments</li>
-									<li>Football Classes</li>
-								</ul>
-							</div>
-							<div class="col col-sm-3 sub-nav">
-								<h3 class="text-warning">Watch</h3>
-								<ul>
-									<li>Match Schedules</li>
-									<li>Public Viewing</li>
-									<li>Events</li>
-								</ul>
-							</div>
-							<div class="col col-sm-3 sub-nav">
-								<h3 class="text-warning">Store</h3>
-								<ul>
-									<li>Football Merchandise</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col col-sm-12">
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
 
 
 
-		<!-- Import Bootstrap Script -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-		<!-- Import Custom Script -->
-		<script type="text/javascript"></script>
-	</body>
-	</html>
+	<!-- Import Bootstrap Script -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<!-- Import Custom Script -->
+	<script type="text/javascript"></script>
+</body>
+</html>

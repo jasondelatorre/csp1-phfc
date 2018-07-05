@@ -16,35 +16,174 @@
 *
 */
 
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+green - #142b14
+yellow - #F1C232
+*/
+
+
+
 body {
-	background-color: #142b14;
-	font-family: "Montserrat";
+	/*background-color: #142b14;*/
+	background-color:#142b14;
+	font-family: 'Lato', sans-serif;
 }
 
-div[class^="header"]:child {
-	height:100%;
+input:focus{
+    outline: none;
+}
+
+div.main-header {
+	min-height:10vh;
+	font-family: 'Open Sans', sans-serif;
+}
+div.main-header > div.container > div.row {
+	background-color: #142b14;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.main-header {
+	color:#ffc107;
+	background-color: #142b14;
+	/*background-image: linear-gradient(to bottom, #136906, #14590f, #144913, #153a14, #142b14);*/
+}
+
+.main-header img {
+	width:100%;
+	height:10vh;
+	position:relative;
+	top:20px;
+}
+
+.header-subscription > div {
+	position:relative;
+	top:70px;
+}
+
+.header-subscription > div > input {
+	width:250px;
+	background-color: #142b14;
+	border:3px solid rgb(241,194,50,0);
+	border-bottom: 3px solid rgb(241,194,50,1);
+	color:rgb(241,194,50,1);
+}
+.header-subscription > div > button {
+	background-color: #142b14;
+	border:3px solid rgb(241,194,50,0);
+}
+/*.header-subscription > div > button:hover {
+	background-color:#F1C232; 
+	border:2px solid #F1C232;
+	border-radius: 5px;
+	color:#142b14;
+} */
+
+.header-subscription > div > input::placeholder,
+.header-subscription > div > button {
+	color:rgb(241,194,50,1);
 }
 
 .header-social-media {
 	text-align: right;
 }
-.header-social-media ul {
-	height:100%;
-}
+
 .header-social-media li {
 	list-style: none;
-	display: inline-block;
+/*	display: inline-block;*/
 }
 
 
-.main-header {
-	color:#ffc107;
-	background-image: linear-gradient(to bottom, #136906, #14590f, #144913, #153a14, #142b14);
-	height:20vh;
-}
 
 .navi {
 	padding:0;
+}
+.navbar {
+	background-color: #F1C232;
+	padding: 0 5px;
+}
+
+div.main-nav {
+	background-color: #f1c232;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nav-item {
+	margin-right: 20px;
+}
+/*#navbarSupportedContent,
+#navbarSupportedContent > ul, 
+#navbarSupportedContent > ul > li {
+	height:100%;
+}
+#navbarSupportedContent > ul > li > a {
+	height:70px;
+}*/
+
+/*.navbar-nav {
+	margin: 5px 0;
+}*/
+.navbar-nav li {
+	margin:3px 5px;
+}
+.dropdown-toggle::after {
+    display:none !important;
+}
+
+/*.nav-item:hover,*/
+.nav-item > a:hover {
+/*	background-color: #142b14;
+	color:#F1C232 !important;*/
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.nav-item > a {
+	font-weight: 700;
+	color: #142b14 !important; 
+	font-size: 18px;
+	letter-spacing: 3px;
+	padding:0;
+	transition: font-size 0.1s;
+	vertical-align: middle;
+}
+
+.dropdown-toggle::after {
+	color:#F1C232;
+}
+
+
+input#searchBar {
+	background-color: #F1C232; 
+	border: 3px solid rgb(20,43,20,0);
+	border-bottom: 3px solid rgb(20,43,20,1);
+}
+input#searchBar::placeholder {
+	color:rgb(20,43,20);
+}
+
+#searchBar:focus {
+	outline: none;
+	color:rgb(20,43,20);
+}
+
+#searchIcon {
+	color:#142b14;
+	background-color: #F1C232; 
+}
+#searchIcon:hover {
+	background-color: #142b14;
+	color: #F1C232;
+}
+
+.main-story-borderbottom {
+	padding-bottom: 10px;
+}
+
+.main-body > div.row {
+	background-color: #f7f7f7;
 }
 
 div.main-stories {
@@ -58,11 +197,7 @@ div.image-and-paragraph > img {
 div.image-and-paragraph > p {
 	margin: 20px 0 0 0;
 	padding: 0 0 0 5px;
-	border-left: 5px solid steelblue;	
-}
-
-hr {
-	margin: 10px 0;
+	border-left: 5px solid #142b14;	
 }
 
 .figure {
@@ -80,8 +215,8 @@ hr {
 	display: block;
 	margin: 1px 0 1px 1px;
 	padding-left:5px;
-	background-color:red;
-	opacity: 0.5;
+	background-color:#142b14;
+	opacity: 0.8;
 	width:100%;
 	height:41px;
 }
@@ -119,15 +254,18 @@ div.side-image-container > div.row {
 #moreStories {
 	margin-top: 25px;
 	margin-bottom: 20px;
+	background-color: #142b14;
+	color:#F1C232;
 }
+
 
 p {
 	font-size: 12px;
 }
 
 div.sub-footer {
-	color:#ffc107;
-	background-color: #142b14;
+	color:#142b14;
+	background-color: #F1C232;
 	padding-top: 30px;
 }
 
@@ -158,9 +296,16 @@ div.sub-footer li {
 	padding-top: 5px;
 }
 
+
+.main-footer {
+	background-color: #F1C232;
+	padding-bottom: 10px;
+}
+
 .sub-footer h3 {
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	color:#142b14;
 }
 
 .sub-footer li {
