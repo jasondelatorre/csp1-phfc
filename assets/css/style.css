@@ -69,9 +69,17 @@ div.main-header > div.container > div.row {
 	border-bottom: 3px solid rgb(241,194,50,1);
 	color:rgb(241,194,50,1);
 }
-.header-subscription > div > button {
+#subscribeButton {
 	background-color: #142b14;
 	border:3px solid rgb(241,194,50,0);
+	padding: 2px;
+}
+#subscribeButton:hover {
+	background-color: #F1C232;
+	color: #142b14;
+	border:2.5px solid #F1C232;
+	border-radius: 2px;
+	font-weight: 900;
 }
 /*.header-subscription > div > button:hover {
 	background-color:#F1C232; 
@@ -89,9 +97,18 @@ div.main-header > div.container > div.row {
 	text-align: right;
 }
 
-.header-social-media li {
+.header-social-media li,
+.header-social-media a {
 	list-style: none;
+	color:#f1c232;
 /*	display: inline-block;*/
+}
+.header-social-media a:visited {
+	color:#f1c232;
+}
+.header-social-media a:hover {
+	text-decoration: none;
+	font-weight: 800;
 }
 
 
@@ -106,8 +123,8 @@ div.main-header > div.container > div.row {
 
 div.main-nav {
 	background-color: #f1c232;
-	padding-top: 5px;
-	padding-bottom: 5px;
+/*	padding-top: 5px;
+	padding-bottom: 5px;*/
 }
 
 .nav-item {
@@ -134,14 +151,14 @@ div.main-nav {
 
 /*.nav-item:hover,*/
 .nav-item > a:hover {
-/*	background-color: #142b14;
-	color:#F1C232 !important;*/
-	font-size: 20px;
-	line-height: 30px;
+	background-color: #142b14;
+	color:#F1C232 !important;
+	border-radius: 5px;
+	/*line-height: 30px;*/
 }
 
 .nav-item > a {
-	font-weight: 700;
+	font-weight: 600;
 	color: #142b14 !important; 
 	font-size: 18px;
 	letter-spacing: 3px;
@@ -149,6 +166,9 @@ div.main-nav {
 	transition: font-size 0.1s;
 	vertical-align: middle;
 }
+/*.navbar-nav > li:first-child > a {
+	font-size: 24px;
+}*/
 
 .dropdown-toggle::after {
 	color:#F1C232;
@@ -190,12 +210,15 @@ div.main-stories {
 	margin-top: 10px;
 }
 
-div.image-and-paragraph > img {
+div.image-and-paragraph img {
 	width:100%;
 }
+div.image-and-paragraph h2 {
+	margin: 5px 0;
+}
 
-div.image-and-paragraph > p {
-	margin: 20px 0 0 0;
+div.image-and-paragraph p {
+	margin: 0;
 	padding: 0 0 0 5px;
 	border-left: 5px solid #142b14;	
 }
@@ -214,11 +237,19 @@ div.image-and-paragraph > p {
 	right:1px;
 	display: block;
 	margin: 1px 0 1px 1px;
-	padding-left:5px;
+	padding:0 5px;
 	background-color:#142b14;
 	opacity: 0.8;
 	width:100%;
 	height:41px;
+	color:#f1c232;
+/*	transition: height 2s;
+	transition: bottom 0.5s;*/
+}
+.figure-caption:hover {
+	height:51px;
+	bottom:60px;
+	opacity: 0.85;
 }
 
 .clear {
@@ -251,6 +282,25 @@ div.side-image-container > div.row {
 	margin-top: 5px;
 }
 
+div.card-header {
+	background-color: #142b14;
+	color:#f1c232;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px; 
+	letter-spacing: 2px;
+	/*margin-top: 10px;*/
+	padding-top: 5px;
+}
+
+.breaking-news li,
+.other-news li {
+	padding:2px 10px;
+}
+
+.card-header {
+	padding:5px 10px;
+}
+
 #moreStories {
 	margin-top: 25px;
 	margin-bottom: 20px;
@@ -258,9 +308,8 @@ div.side-image-container > div.row {
 	color:#F1C232;
 }
 
-
-p {
-	font-size: 12px;
+.main-body div.card:last-child {
+	margin-bottom: 15px;
 }
 
 div.sub-footer {
@@ -275,8 +324,13 @@ div.sub-footer li {
 	text-align: center;
 }
 
+div.sub-footer a:visited,
+div.sub-footer a {
+	color:#142b14;
+}
+
 .sub-nav {
-	padding:5px;
+	padding:5px 10px;
 }
 
 .figure {
@@ -310,5 +364,86 @@ div.sub-footer li {
 
 .sub-footer li {
 	margin-bottom: 5px;
+}
+
+#logoTitleFooter {
+	width:100%;
+	height:70px;
+	position: relative;
+	top:30px;
+}
+
+#logoTitleFooterText {
+	padding-top: 30px;
+}
+#logoTitleFooterText > p {
+	font-size: 24px;
+	margin-left: 10px;
+}
+
+.copyright p {
+	text-align: center;
+	color:#F1C232;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+#casualForFun img {
+	width:100%;
+	height:200px;
+	padding-top: 10px;
+}
+
+
+.agenda {
+	padding:5px 10px;
+}
+
+/* Dates */
+.agenda .agenda-date { 
+ 	width: 150px; 
+
+ }
+
+.dayofmonth {
+  width: 150px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: left;
+  /*margin-right: 10px; */
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+
+/* Times */
+.agenda .agenda-time {
+	width: 200px;
+} 
+
+
+/* Events */
+.agenda .agenda-events {  } 
+.agenda .agenda-events .agenda-event {  } 
+
+
+#publicViewing div.card > div.card-list{
+	padding: 0 10px;
+}
+
+.store-filter ul {
+	display: inline-block;
+}
+
+.store-filter li {
+	list-style: none;
+	display: inline-block;
+}
+
+.store-image {
+	width:100%;
+	height:150px;
 }
 
