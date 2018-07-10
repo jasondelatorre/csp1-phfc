@@ -30,7 +30,7 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
@@ -127,6 +127,16 @@ div.main-nav {
 	padding-bottom: 5px;*/
 }
 
+div.main-nav a.dropdown-item:hover {
+	background-color: #142b14 !important;
+	color: #f1c232 !important;
+}
+div.main-nav a.dropdown-item:focus {
+	background-color: #f1c232 !important;
+	color: #142b14 !important;
+	font-weight: 600;
+}
+
 .nav-item {
 	margin-right: 20px;
 }
@@ -212,15 +222,24 @@ div.main-stories {
 
 div.image-and-paragraph img {
 	width:100%;
+	height:350px;
 }
 div.image-and-paragraph h2 {
 	margin: 5px 0;
+	font-size: 26px;
 }
 
 div.image-and-paragraph p {
 	margin: 0;
 	padding: 0 0 0 5px;
 	border-left: 5px solid #142b14;	
+}
+
+div.image-and-paragraph a {
+	color:#142b14;
+}
+div.image-and-paragraph a:visited {
+	color:#142b14;
 }
 
 .figure {
@@ -239,17 +258,20 @@ div.image-and-paragraph p {
 	margin: 1px 0 1px 1px;
 	padding:0 5px;
 	background-color:#142b14;
-	opacity: 0.8;
+	opacity: 0.95;
 	width:100%;
 	height:41px;
 	color:#f1c232;
+	line-height: 17px;
 /*	transition: height 2s;
 	transition: bottom 0.5s;*/
 }
+
 .figure-caption:hover {
 	height:51px;
 	bottom:60px;
 	opacity: 0.85;
+	font-weight: 700;
 }
 
 .clear {
@@ -268,6 +290,11 @@ div.side-image-container > div.row {
 }
 .side-image-container {
 	padding: 0 0 0 5px;
+}
+
+.main-side-image {
+	height:130px;
+	width:100%;
 }
 
 .container {
@@ -297,8 +324,42 @@ div.card-header {
 	padding:2px 10px;
 }
 
+.news-link {
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-link > a {
+	color:#142b14;
+	text-decoration: none;
+}
+.news-link > a:hover {
+	color:#142b14;
+	text-decoration: underline;
+}
+.news-link > a:visisted {
+	color:#142b14;
+	text-decoration: none;
+}
+
+#sideBreakingNews,
+#sideOtherNews {
+	margin-right: 10px;
+}
+
 .card-header {
 	padding:5px 10px;
+}
+
+.substory-row {
+	margin-bottom: 15px;
+}
+.substory-img-container {
+	padding: 0;
+}
+.news-substory-image {
+	width:100%;
+	height:100px;
 }
 
 #moreStories {
@@ -310,6 +371,12 @@ div.card-header {
 
 .main-body div.card:last-child {
 	margin-bottom: 15px;
+}
+
+div.card > p {
+	margin-bottom: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
 }
 
 div.sub-footer {
@@ -343,7 +410,7 @@ div.sub-footer a {
 
 .card {
 	width:100%;
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 }
 
 .side-card-links {
@@ -394,6 +461,35 @@ div.sub-footer a {
 	padding-top: 10px;
 }
 
+#casualForFun div.card > div.row,
+#competitiveTournaments div.card > div.row,
+#footballClasses div.card > div.row {
+	padding:0 10px;
+}
+
+#casualForFun h3 {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: 600;
+}
+#casualForFun div.card > div.row p {
+	margin-bottom: 3px;
+	text-align: center;
+}
+
+#footballClasses div.card div.card {
+	padding:10px 5px 5px 5px;
+}
+
+#footballClasses h4 {
+	font-weight: 600;
+}
+
+#footballClasses img {
+	width:100%;
+	height:150px;
+}
 
 .agenda {
 	padding:5px 10px;
@@ -429,21 +525,135 @@ div.sub-footer a {
 .agenda .agenda-events .agenda-event {  } 
 
 
+
 #publicViewing div.card > div.card-list{
 	padding: 0 10px;
 }
 
+#publicViewing h5 {
+	font-weight: 600;
+}
+
+#events .card{
+	padding-bottom: 15px;
+}
+#events p {
+	margin-right: 10px;
+}
+
+#events div.card div.row {
+	padding: 0 10px;
+}
+
+#events h5 {
+	font-weight: 600;
+}
+
+.event-image-column {
+	padding:0 0 0 15px;
+}
+.events-image {
+	width:100%;
+}
+
+/*.pv-img {
+	height:170px;
+}*/
+
+
+
 .store-filter ul {
 	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.store-filter p {
+	margin-bottom: 5px;
+	margin-left: 10px;
 }
 
 .store-filter li {
 	list-style: none;
 	display: inline-block;
+	margin: 0 15px;
+	font-weight: 500;
 }
 
 .store-image {
-	width:100%;
-	height:150px;
+	width:60%;
+	margin:10px 0px 10px 60px;
+	height:130px;
 }
 
+#casualForFun h3 {
+	font-size: 22px;
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+#casualForFun p {
+	padding-left: 10px;
+}
+
+#footballClasses div.card > div.row {
+	padding-bottom: 10px;
+}
+
+.pagination,
+.pagination a,
+.pagination a:hover {
+	color:#142b14;
+}
+
+.card-header + p {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.public-viewing-button,
+#footballClassesReadMore {
+	background-color: #142b14;
+	color:#F1C232;
+}
+.public-viewing-button:hover {
+	background-color: #F1C232;
+	color:#142b14;
+	border: 1px solid #F1C232;
+	font-weight: 700;
+}
+.public-viewing-button:focus {
+	outline: none;
+}
+
+.store-items-container {
+	padding-bottom: 10px;
+}
+
+.store-items-container p,
+.store-items-container h5,
+.store-items-container h6 {
+	margin-bottom: 0;
+	line-height: 17px;
+	text-align: center;
+}
+.store-items-container h5,
+.store-items-container h6 {
+	margin: 10px 0;
+	font-weight: 600;
+}
+
+#filterIcon {
+	color:#142b14;
+	background-color: #F1C232; 
+}
+#filterIcon:hover {
+	background-color: #142b14;
+	color: #F1C232;
+}
+
+#filterBar {
+	border: 0px solid black;
+	border-bottom: 2px solid #142b14;
+	margin-right: 5px;
+	height:100%;
+	margin-bottom: -12px;
+}
