@@ -23,6 +23,30 @@ yellow - #F1C232
 */
 
 
+#mainPage {
+	height:100vh;
+	color:#142b14;	
+}
+
+#mainContainer {
+	margin: 0 auto;
+	width:50%;
+}
+
+.link {
+	margin: 0 auto;
+	position: relative;
+	top:100%;
+	color:#142b14;
+	background-color:#F1C232;
+	padding: 20px;
+	text-align: center;
+}
+
+.link a {
+	color:#142b14;
+}
+
 
 body {
 	/*background-color: #142b14;*/
@@ -272,6 +296,7 @@ div.image-and-paragraph a:visited {
 	bottom:60px;
 	opacity: 0.85;
 	font-weight: 700;
+	text-decoration: none;
 }
 
 .clear {
