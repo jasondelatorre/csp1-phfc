@@ -4,79 +4,688 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv content="IE=Edge">
-	<title>NEWS | PH FC</title>
+	<title>NEWS | TOP CORNER</title>
 	
 	<!-- Import favicon.ico -->
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
 	<!-- Import Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+
 	<!-- Import Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	
 	<!-- Import Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<!-- Import Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/mobile.css">
 </head>
-<body>
-	<div class="container">
-		<div class="row" style="min-height: 10vh;">
-			
-		</div><!--/.row - Header -->
 
-		<div class="row">
-			<ul class="nav nav-pills">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Home</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">News</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Category 1</a>
-						<a class="dropdown-item" href="#">Category 2</a>
-						<a class="dropdown-item" href="#">Category 3</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
+<body>
+	<div class="container-fluid main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col col-12 col-sm-5 col-lg-4 col-md-5 header-main-name">
+					<!-- <h1>theCornerKick</h1> -->
+					<div class="row">
+						<img src="../assets/image/background/logotitle.png" alt="">
 					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Watch</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Category 1</a>
-						<a class="dropdown-item" href="#">Category 2</a>
-						<a class="dropdown-item" href="#">Category 3</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
+				</div>
+				<div class="col col-2 col-sm-1 col-lg-2 col-md-1 header-tag-line">
+					<!-- <h5>Your daily dose of football</h5> -->
+				</div>
+				<div class="col col-4 col-sm-4 col-lg-4 header-subscription">
+					<div>
+						<input type="text" name="subscribe" placeholder="Enter Email"> 
+						<button id="subscribeButton">Subscribe!</button>
 					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Play</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Category 1</a>
-						<a class="dropdown-item" href="#">Category 2</a>
-						<a class="dropdown-item" href="#">Category 3</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Store</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Category 1</a>
-						<a class="dropdown-item" href="#">Category 2</a>
-						<a class="dropdown-item" href="#">Category 3</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
-					</div>
-				</li>
-			</ul>
-		</div><!-- /.row - Navbar -->
-		
+				</div>
+				<div class="col col-sm-2 col-lg-2 header-social-media">
+					<ul>
+						<li><a href="https://www.facebook.com" target="_blank">Facebook <i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="https://www.twitter.com" target="_blank">Twitter <i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="https://www.instagram.com" target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
+						<li>RSS <i class="fas fa-rss-square"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<div class="container-fluid main-nav">
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-12 col-lg-12 navi">
+					<nav class="navbar navbar-expand-lg">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										News
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="../news/news.html#worldCup">FIFA World Cup 2018</a>
+										<a class="dropdown-item" href="../news/news.html#phFootball">Philippine Football</a>
+										<a class="dropdown-item" href="../news/news.html#englishFootball">English Premier League</a>
+										<a class="dropdown-item" href="../news/news.html#spanishFootball">Spanish La Liga</a>
+										<a class="dropdown-item" href="../news/news.html#italianFootball">Italia Serie A</a>
+										<a class="dropdown-item" href="../news/news.html#germanFootball">German Bundesliga</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Play 
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="../play/play.html#casualForFun">Casual for Fun</a>
+										<a class="dropdown-item" href="../play/play.html#competitiveTournaments">Competitive Tournaments</a>
+										<a class="dropdown-item" href="../play/play.html#footballClasses">Football Classes</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Watch
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="../watch/watch.html#matchSchedules">Match Schedules</a>
+										<a class="dropdown-item" href="../watch/watch.html#publicViewing">Public Viewing</a>
+										<a class="dropdown-item" href="../watch/watch.html#events">Events</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Store
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="../store/store.html#footballMerchandise">Football Merchandise</a>
+									</div>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<input id="searchBar" type="search" placeholder="Search">
+								<button id="searchIcon" class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+							</form>
+						</div>
+					</nav>
+				</div>
+			</div> 
+		</div>
+	</div>
 
-	<!-- Import Bootstrap Script -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<!-- Import Custom Script -->
-	<script type="text/javascript"></script>
-</body>
-</html>
+	<div class="container main-body">
+		<div class="row main-story-borderbottom">
+			<div class="col col-sm-7 col-lg-7 main-stories">
+				<div class="row image-and-paragraph">
+					<div class="col col-sm-12 col-lg-12">
+						<img class="img-fluid img-thumbnail" src="./assets/image/main-news/image1.jpg" alt="Main News Image 1">
+						<h2><a href="https://www.telegraph.co.uk/world-cup/2018/07/09/world-cup-2018-fixtures-semi-final-kick-off-times-tournament/" target="_blank">World Cup 2018 Semi-finals: Who will take it all?</a></h2>
+						<p>Belgium vs France, England vs Croatia. Exciting matches as the world cup approaches its climax. <a href="https://www.telegraph.co.uk/world-cup/2018/07/09/world-cup-2018-fixtures-semi-final-kick-off-times-tournament/" target="_blank">Read More...</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col col-sm-5 side-image-container main-stories">
+				<div class="row">
+					<div class="col col-sm-6">
+						<a href="https://www.fifa.com/worldcup/news/preview-france-v-belgium" target="_blank">
+							<div class="row">
+								
+								<figure class="figure">
+									<img src="./assets/image/main-news/image2.jpg" class="figure-img img-fluid rounded main-side-image" alt="Main News Image 2">
+								</figure>								
+							</div>
+							<div class="row clear">
+								<figcaption class="figure-caption">Belgium vs France: Match Analysis</figcaption>	
+							</div>
+						</a> 
+
+						<a href="https://www.fifa.com/worldcup/matches/match/300331522/#match-liveblog" target="_blank">
+							<div class="row">
+									<figure class="figure">
+										<img src="./assets/image/main-news/image3.jpg" class="figure-img img-fluid rounded main-side-image" alt="Main News Image 3">
+									</figure>
+								</div>
+								<div class="row clear">
+									<figcaption class="figure-caption">England vs Croatia: Match Analysis</figcaption>
+
+							</div>
+						</a>
+
+						<a href="https://www.independent.co.uk/sport/football/world-cup/germany-world-cup-2018-out-exit-group-stage-south-korea-goals-watch-video-miguel-delaney-a8420076.html" target="_blank">
+							<div class="row">
+								<figure class="figure">
+									<img src="./assets/image/main-news/image4.jpg" class="figure-img img-fluid rounded main-side-image" alt="Main News Image 4">
+								</figure>
+							</div>
+							<div class="row clear">
+								<figcaption class="figure-caption">Defending Champs falls out of World Cup</figcaption>
+							</div>
+						</a>						
+					</div> <!-- MAIN NEWS - SIDE-STORY - LEFT -->
+
+					<div class="col col-sm-6 col-lg-6">
+						<a href="https://www.theguardian.com/football/live/2018/jul/01/world-cup-2018-messi-ronaldo-out-and-spain-v-russia-buildup-live" target="_blank">
+							<div class="row">
+								<figure class="figure">
+									<img src="./assets/image/main-news/image5.jpg" class="figure-img img-fluid rounded main-side-image" alt="Main News Image 5">
+								</figure>
+							</div>
+							<div class="row clear">
+								<figcaption class="figure-caption">Ronaldo and Messi eliminated from the World Cup</figcaption>
+							</div>
+						</a>
+
+						<a href="https://www.fifa.com/worldcup/preliminaries/europe/road-to-russia.html" target="_blank">
+							<div class="row">
+								<figure class="figure">
+									<img src="./assets/image/main-news/image6.jpg" class="figure-img img-fluid rounded main-side-image" alt="Main News Image 6">
+								</figure>
+							</div>
+							<div class="row clear">
+								<figcaption class="figure-caption">Road to Moscow: All you need to know</figcaption>
+							</div>
+						</a>
+
+						<a href="https://www.uefa.com/uefachampionsleague/news/newsid=2554889.html" target="_blank">
+							<div class="row">
+								<figure class="figure">
+									<img src="./assets/image/main-news/image7.jpg" class="figure-img img-fluid rounded main-side-image" alt="Main News Image 7">
+								</figure>
+							</div>
+							<div class="row clear">
+								<figcaption class="figure-caption">Real Madrid wins third consecutive Champions League</figcaption>
+							</div>
+						</a>
+
+
+					</div><!-- MAIN NEWS - SIDE-STORY - LEFT -->
+				</div>
+
+			</div>
+		</div><!-- MAIN STORIES -->
+
+		<div class="row">
+			<div class="col col-sm-9 col-lg-9">
+				<div class="row football-story" id="worldCup">
+					<div class="col col-sm-12 col-lg-12">
+						<div class="row">
+							<div class="card">
+								<div class="card-header">
+									FIFA World Cup 2018
+								</div>
+								<div class="card-body">
+									<div class="row substory-row">
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-fluid img-thumbnail" src="./assets/image/world-cup/image1.jpg" alt="World Cup Image 1">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">Belgium upsets Brazil 2-1</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/world-cup/image2.jpg" alt="World Cup Image 2">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">Croatia wins over Russia in penalties</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/world-cup/image3.jpg" alt="World Cup Image 3">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">England vs Sweden: It's coming home</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/world-cup/image4.jpg" alt="World Cup Image 4">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">Strong France dominate game against Uruguay</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+				<div class="row football-story" id="phFootball">
+					<div class="col col-sm-12 col-lg-12">
+						<div class="row">
+							<div class="card">
+								<div class="card-header">
+									Local Ph Football
+								</div>
+								<div class="card-body">
+									<div class="row substory-row">
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-fluid img-thumbnail" src="./assets/image/ph-football/image1.jpg" alt="PH Football Image 1">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">Belgium upsets Brazil 2-1</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/ph-football/image2.jpg" alt="PH Football Image 2">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">Croatia wins over Russia in penalties</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/ph-football/image3.jpg" alt="PH Football Image 3">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">Younghusband powers Meralco past Ilocos United</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6 col-lg-6">
+											<div class="row">
+												<div class="col col-sm-4 col-lg-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/ph-football/image4.jpg" alt="PH Football Image 4">
+												</div>	
+												<div class="col col-sm-8 col-lg-8">	
+													<h5 class="card-title">Kaya Makati subdues Stallion Laguna</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+				<div class="row football-story" id="englishFootball">
+					<div class="col col-sm-12">
+						<div class="row">
+							<div class="card">
+								<div class="card-header">
+									English Premier League
+								</div>
+								<div class="card-body">
+									<div class="row substory-row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-fluid img-thumbnail" src="./assets/image/english-football/image1.jpg" alt="English Football Image 1">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Arsenal target Torreira set for medicals</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/english-football/image2.jpg" alt="English Football Image 2">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Croatia wins over Russia in penalties</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/english-football/image3.jpg" alt="English Football Image 3">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">England vs Sweden: It's coming home</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/english-football/image4.jpg" alt="English Football Image 4">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Strong France dominate game against Uruguay</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+				<div class="row football-story" id="spanishFootball">
+					<div class="col col-sm-12">
+						<div class="row">
+							<div class="card">
+								<div class="card-header">
+									Spanish La Liga
+								</div>
+								<div class="card-body">
+									<div class="row substory-row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-fluid img-thumbnail" src="./assets/image/spanish-football/image1.jpg" alt="Spanish Football Image 1">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Barcelona Win La Liga Title</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/spanish-football/image2.jpg" alt="Spanish Football Image 2">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Croatia wins over Russia in penalties</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/spanish-football/image3.jpg" alt="Spanish Football Image 3">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">England vs Sweden: It's coming home</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/spanish-football/image4.jpg" alt="Spanish Football Image 4">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Strong France dominate game against Uruguay</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+				<div class="row football-story" id="italianFootball">
+					<div class="col col-sm-12">
+						<div class="row">
+							<div class="card">
+								<div class="card-header">
+									Italia Serie A
+								</div>
+								<div class="card-body">
+									<div class="row substory-row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-fluid img-thumbnail" src="./assets/image/italian-football/image1.jpg" alt="Italian Football Image 1">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Juventus win seventh consecutive Serie A title</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/italian-football/image2.jpg" alt="Italian Football Image 2">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Liverpool considering move for Juventus' Paulo Dybala</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/italian-football/image3.jpg" alt="Italian Football Image 3">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Why have UEFA banned AC Milan from next season's Europa League?</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image/italian-football/image4.jpg" alt="Italian Football Image 4">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">European Paper Talk: Lazio target Arsenal midfielder Aaron Ramsey</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+				<div class="row football-story" id="germanFootball">
+					<div class="col col-sm-12">
+						<div class="row">
+							<div class="card">
+								<div class="card-header">
+									German Bundesliga
+								</div>
+								<div class="card-body">
+									<div class="row substory-row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-fluid img-thumbnail" src="./assets/image/german-football/image1.jpg" alt="German Football Image 1">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Belgium upsets Brazil 2-1</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image//german-football/image2.jpg" alt="German Football Image 2">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Croatia wins over Russia in penalties</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image//german-football/image3.jpg" alt="German Football Image 3">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Borussia Dortmund duo Marco Reus and Christian Pulisic: players to watch in Bundesliga 2018</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col col-sm-6">
+											<div class="row">
+												<div class="col col-sm-4 substory-img-container">
+													<img class="news-substory-image img-thumbnail" src="./assets/image//german-football/image4.jpg" alt="German Football Image 4">
+												</div>	
+												<div class="col col-sm-8">	
+													<h5 class="card-title">Bundesliga's youngest coach honored as league's best in 2016</h5>
+													<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>					
+			</div> <!-- Stories - Leftside -->
+
+			<div class="col col-sm-3">
+				<div class="row">
+					<div class="card" id="sideBreakingNews">
+						<div class="card-header side-news-header">
+							Breaking News
+						</div>
+						<ul class="list-group list-group-flush breaking-news">
+							<li class="list-group-item news-link"><a href="https://www.footballfancast.com/premier-league/manchester-united/man-united-must-drop-mandzukic-interest-and-swoop-for-on-the-market-cavani" target="_blank">Man United must drop Mandzukic interest and swoop for on-the-market Cavani</a></li>
+							<li class="list-group-item news-link"><a href="https://www.dailystar.co.uk/news/latest-news/712975/arsenal-news-jack-wilshere-wife-andriani-michael-transfer-west-ham?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+daily-star-latest-news+%28Daily+Star+%3A%3A+News+Feed%29" target="_blank">Jack Wilshere signs for West Ham – who’s the stunning wife he’s taking to Stratford?</li>
+								<li class="list-group-item news-link"><a href="http://www.espn.co.uk/football/blog/transfer-talk/79/post/3561205/transfer-talk-chelsea-to-hijack-jorginhos-manchester-city-move" target="_blank">Transfer Talk: Chelsea to hijack Jorginho's Manchester City move</a></li>
+								<li class="list-group-item news-link"><a href="http://www.xinhuanet.com/english/2018-07/09/c_137312784.htm" target="_blank">England wary of 'world class' Modric</a></li>
+								<li class="list-group-item news-link"><a href="https://www.foxsports.com.au/football/uruguayan-lucas-torreira-compared-to-sergio-busquets-following-transfer-to-arsenal/news-story/208a0e6d21796b1b8b8ddecb55fe5a1d" target="_blank">Uruguayan Lucas Torreira compared to Sergio Busquets following transfer to Arsenal</a></li>
+								<li class="list-group-item news-link"><a href="https://www.theguardian.com/football/ng-interactive/2018/jun/03/transfer-window-summer-2018-every-deal-europes-top-five-leagues" target="_blank">Transfer window 2018 – every summer deal from Europe's top five leagues</a></li>
+								<li class="list-group-item news-link"><a href="https://www.football365.com/news/gareth-southgate-even-hugs-people-he-is-southgreat" target="_blank">Gareth Southgate EVEN hugs people. He is SouthGreat!</a></li>
+								<li class="list-group-item news-link"><a href="https://www.planetfootball.com/quick-reads/the-five-steps-of-jordan-hendersons-season-long-turnaround-in-reputation/" target="_blank">The five steps of Jordan Henderson’s season-long turnaround in reputation</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card" id="sideOtherNews">
+							<div class="card-header side-news-header">
+								Other news
+							</div>
+							<ul class="list-group list-group-flush other-news">
+								<li class="list-group-item news-link"><a href="http://www.abc.net.au/news/2018-07-10/world-cup-neymar-diving-challenge/9962638" target="_blank">World Cup: Diving Neymar rolls out of social media and into Mexican league football</a></li>
+								<li class="list-group-item news-link"><a href="http://www.espn.co.uk/football/soccer-transfers/story/3561207/major-league-soccera-league-await-fernando-torres-decision-on-tuesday" target="_blank">Major League Soccer, A-League await Fernando Torres' decision on Tuesday</a></li>
+								<li class="list-group-item news-link"><a href="http://punchng.com/spain-appoint-luis-enrique-as-new-coach/" target="_blank">Spain appoint Luis Enrique as new coach</a></li>
+								<li class="list-group-item news-link"><a href="http://www.goal.com/en/news/mbappe-is-a-good-mix-of-ronaldo-henry-cristiano-van-buyten/1d2wylh7vspvu12dgzknll2y16" target="_blank">Mbappe is a good mix of Ronaldo, Henry & Cristiano – Van Buyten</a></li>
+								<li class="list-group-item news-link"><a href="https://www.football365.com/news/how-much-more-patience-should-england-have-with-sterling" target="_blank">How much more patience should England have with Sterling?</a></li>
+							</ul>
+						</div>
+					</div>
+				</div> 
+			</div><!-- Stories - Rightside -->	
+
+			<div class="row">
+				<div class="col col-sm-12">
+					<button type="button" class="btn btn-primary col-sm-12" id="moreStories">More Stories</button>
+				</div>
+			</div> <!-- More Stories Button -->
+
+		</div><!-- /container - row2 -->
+
+		<div class="container-fluid main-footer">
+			<div class="container">
+				<div class="row sub-footer">
+					<div class="col col-sm-3">
+						<div class="row">
+							<img id="logoTitleFooter"src="../assets/image/background/logotitle-footer.png" alt="">
+						</div>
+						<div id="logoTitleFooterText"class="row">					
+							<p>Your daily dose of football</p>
+						</div>
+					</div>
+					<div class="col col-sm-9">
+						<div class="row">
+							<div class="col col-sm-3 sub-nav">
+								<h3>News</h3>
+								<ul>
+									<li><a href="../news/news.html#worldCup">FIFA World Cup 2018</a></li>
+									<li><a href="../news/news.html#phFootball">Philippine Football</a></li>
+									<li><a href="../news/news.html#englishFootball">English Premier League</a></li>
+									<li><a href="../news/news.html#spanishFootball">Spanish La Liga</a></li>
+									<li><a href="../news/news.html#italianFootball">Italia Serie A</a></li>
+									<li><a href="../news/news.html#germanFootball">German Bundesliga</a></li>
+								</ul>
+							</div>
+							<div class="col col-sm-3 sub-nav">
+								<h3>Play</h3>
+								<ul>
+									<li><a href="../play/play.html#casualForFun">Casual For Fun</a></li>
+									<li><a href="../play/play.html#competitiveTournaments">Competitive Tournaments</a></li>
+									<li><a href="../play/play.html#footballClasses">Football Classes</a></li>
+								</ul>
+							</div>
+							<div class="col col-sm-3 sub-nav">
+								<h3>Watch</h3>
+								<ul>
+									<li><a href="../watch/watch.html#matchSchedules">Match Schedules</a></li>
+									<li><a href="../watch/watch.html#publicViewing">Public Viewing</a></li>
+									<li><a href="../watch/watch.html#events">Events</a></li>
+								</ul>
+							</div>
+							<div class="col col-sm-3 sub-nav">
+								<h3>Store</h3>
+								<ul>
+									<li><a href="../store/store.html#footballMerchandise">Football Merchandise</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row copyright">
+				<div class="col col-sm-12">
+					<p>Copyright 2018 &middot; Designed by Jason Dela Torre</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Import Bootstrap Script -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<!-- Import Custom Script -->
+		<script type="text/javascript"></script>
+	</body>
+	</html>
