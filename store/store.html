@@ -25,25 +25,22 @@
 </head>
 
 <body>
+	<!-- START HEADER -->
+
 	<div class="container-fluid main-header">
 		<div class="container">
 			<div class="row">
-				<div class="col col-sm-4 header-main-name">
-					<!-- <h1>theCornerKick</h1> -->
-					<div class="row">
-						<img src="../assets/image/background/logotitle.png" alt="">
-					</div>
+				<div class="col-sm-12 col-lg-4 col-md-5 header-main-name">
+					<img src="../assets/image/background/logotitle.png" alt="Logo">
 				</div>
-				<div class="col col-lg-2 col-sm-12 header-tag-line">
+				<div class="col-sm-12 col-lg-2 col-md-1 header-tag-line">
 					<!-- <h5>Your daily dose of football</h5> -->
 				</div>
-				<div class="col col-sm-4 header-subscription">
-					<div>
-						<input type="text" name="subscribe" placeholder="Enter Email"> 
-						<button id="subscribeButton">Subscribe!</button>
-					</div>
+				<div class="col-sm-12 col-lg-4 col-md-4 header-subscription">
+					<input type="text" name="subscribe" placeholder="Enter Email"> 
+					<button id="subscribeButton">Subscribe!</button>
 				</div>
-				<div class="col col-sm-2 header-social-media">
+				<div class="col col-sm-12 col-md-2 col-lg-2 header-social-media">
 					<ul>
 						<li><a href="https://www.facebook.com" target="_blank">Facebook <i class="fab fa-facebook-square"></i></a></li>
 						<li><a href="https://www.twitter.com" target="_blank">Twitter <i class="fab fa-twitter-square"></i></a></li>
@@ -58,10 +55,10 @@
 	<div class="container-fluid main-nav">
 		<div class="container">
 			<div class="row">
-				<div class="col col-sm-12 navi">
-					<nav class="navbar navbar-expand-lg">
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto">
+				<div class="col col-sm-12 col-lg-12 navi">
+					<div class="row navbar navbar-expand-lg">
+						<div class="col-sm-12 col-md-6 col-lg-6" id="navbarSupportedContent">
+							<ul class="list-nav mr-auto">
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										News
@@ -104,16 +101,19 @@
 									</div>
 								</li>
 							</ul>
-							<form class="form-inline my-2 my-lg-0">
-								<input id="searchBar" type="search" placeholder="Search">
-								<button id="searchIcon" class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-							</form>
 						</div>
-					</nav>
+						<div class="text-right col-sm-12 col-lg-6 col-md-6 search-bar form-inline my-2 my-lg-0" style="display:flex; justify-content: flex-end;">
+							<input id="searchBar" type="search" placeholder="Search">
+							<button id="searchIcon" class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+						</div>
+					</div>
 				</div>
 			</div> 
 		</div>
 	</div>
+
+
+	<!-- END HEADER -->
 
 	<div class="container main-body">
 		<div class="row" id="footballMerchandise">
@@ -123,8 +123,8 @@
 					
 					<p>Latest football gears and accessories</p>
 
-					<div class="row store-filter">
-						<div class="col col-sm-8">
+					<div class="row store-filter px-4">
+						<div class="col col-sm-12 col-md-12 col-lg-7 px-2">
 							<p>Filter by category:</p> 
 							<ul>
 								<li>Shoes</li>
@@ -134,8 +134,8 @@
 								<li>Accessories</li>
 							</ul>
 						</div>
-						<div class="col col-sm-4">
-							<form class="form-inline my-2 my-lg-0">
+						<div class="col col-sm-12 col-md-12 col-lg-5 px-2 text-center">
+							<form class="form-inline my-2 my-lg-0" style="text-align:center;">
 								<input id="filterBar"type="search" placeholder="Search Item" style="width:300px;">
 								<button id="filterIcon"class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 							</form>
@@ -144,28 +144,28 @@
 
 					<div class="container">
 					<div class="row store-items-container">
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod1.jpg" alt="Item Product Store">
 							<h5>Adidas Predator 2018</h5>
 							<p>Shoes</p>
 							<p>Adidas</p>
 							<h6>P 5000</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod2.jpg" alt="Item Product Store">
 							<h5>Nike</h5>
 							<p>Shoes</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod3.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Shoes</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod4.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Shoes</p>
@@ -174,28 +174,28 @@
 						</div>
 					</div>
 					<div class="row store-items-container">
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod5.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Jersey</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod6.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Jersey</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod7.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Balls</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod8.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Balls</p>
@@ -204,28 +204,28 @@
 						</div>
 					</div>
 					<div class="row store-items-container">
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod9.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Accessories</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod10.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Accessories</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod11.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Bags</p>
 							<p>Brand / Name</p>
 							<h6>Price</h6>
 						</div>
-						<div class="col col-sm-3">
+						<div class="col col-sm-12 col-md-6 col-lg-3">
 							<img class="store-image img-thumbnail" src="./assets/image/prod12.jpg" alt="Item Product Store">
 							<h5>Product</h5>
 							<p>Bags</p>
@@ -238,10 +238,9 @@
 			</div>		
 		</div>
 		<div class="row" id="page-navigation">
-			<div class="col col-sm-4"></div>
-			<div class="col col-sm-4">
+			<div class="col-sm-12 text-center" style="margin:0 auto;">
 				<nav aria-label="Page navigation example" style="margin:0 auto; width:100%;">
-				  <ul class="pagination" style="padding-left:50px;">
+				  <ul class="pagination" style="padding-left:50px; display: flex; justify-content: center;">
 				    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
 				    <li class="page-item"><a class="page-link" href="#">1</a></li>
 				    <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -250,61 +249,60 @@
 				  </ul>
 				</nav>
 			</div>
-			<div class="col col-sm-4"></div>
 		</div>
 	</div><!-- BODY - STORE -->
 
 	<div class="container-fluid main-footer">
-		<div class="container">
-			<div class="row sub-footer">
-				<div class="col col-sm-3">
-					<div class="row">
-						<img id="logoTitleFooter"src="../assets/image/background/logotitle-footer.png" alt="">
+			<div class="container">
+				<div class="row sub-footer">
+					<div class="col-sm-12 col-lg-3 col-md-12">
+						<div class="row">
+							<img id="logoTitleFooter"src="../assets/image/background/logotitle-footer.png" alt="">
+						</div>
+						<div id="logoTitleFooterText"class="row">					
+							<p>Your daily dose of football</p>
+						</div>
 					</div>
-					<div id="logoTitleFooterText"class="row">					
-						<p>Your daily dose of football</p>
-					</div>
-				</div>
-				<div class="col col-sm-9">
-					<div class="row">
-						<div class="col col-sm-3 sub-nav">
-							<h3>News</h3>
-							<ul>
-								<li><a href="../news/news.html#worldCup">FIFA World Cup 2018</a></li>
-								<li><a href="../news/news.html#phFootball">Philippine Football</a></li>
-								<li><a href="../news/news.html#englishFootball">English Premier League</a></li>
-								<li><a href="../news/news.html#spanishFootball">Spanish La Liga</a></li>
-								<li><a href="../news/news.html#italianFootball">Italia Serie A</a></li>
-								<li><a href="../news/news.html#germanFootball">German Bundesliga</a></li>
-							</ul>
-						</div>
-						<div class="col col-sm-3 sub-nav">
-							<h3>Play</h3>
-							<ul>
-								<li><a href="../play/play.html#casualForFun">Casual For Fun</a></li>
-								<li><a href="../play/play.html#competitiveTournaments">Competitive Tournaments</a></li>
-								<li><a href="../play/play.html#footballClasses">Football Classes</a></li>
-							</ul>
-						</div>
-						<div class="col col-sm-3 sub-nav">
-							<h3>Watch</h3>
-							<ul>
-								<li><a href="../watch/watch.html#matchSchedules">Match Schedules</a></li>
-								<li><a href="../watch/watch.html#publicViewing">Public Viewing</a></li>
-								<li><a href="../watch/watch.html#events">Events</a></li>
-							</ul>
-						</div>
-						<div class="col col-sm-3 sub-nav">
-							<h3>Store</h3>
-							<ul>
-								<li><a href="../store/store.html#footballMerchandise">Football Merchandise</a></li>
-							</ul>
+					<div class="col-sm-12 col-md-12 col-lg-9">
+						<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-3 sub-nav">
+								<h3>News</h3>
+								<ul>
+									<li><a href="../news/news.html#worldCup">FIFA World Cup 2018</a></li>
+									<li><a href="../news/news.html#phFootball">Philippine Football</a></li>
+									<li><a href="../news/news.html#englishFootball">English Premier League</a></li>
+									<li><a href="../news/news.html#spanishFootball">Spanish La Liga</a></li>
+									<li><a href="../news/news.html#italianFootball">Italia Serie A</a></li>
+									<li><a href="../news/news.html#germanFootball">German Bundesliga</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-3  sub-nav">
+								<h3>Play</h3>
+								<ul>
+									<li><a href="../play/play.html#casualForFun">Casual For Fun</a></li>
+									<li><a href="../play/play.html#competitiveTournaments">Competitive Tournaments</a></li>
+									<li><a href="../play/play.html#footballClasses">Football Classes</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-3 sub-nav">
+								<h3>Watch</h3>
+								<ul>
+									<li><a href="../watch/watch.html#matchSchedules">Match Schedules</a></li>
+									<li><a href="../watch/watch.html#publicViewing">Public Viewing</a></li>
+									<li><a href="../watch/watch.html#events">Events</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-3 sub-nav">
+								<h3>Store</h3>
+								<ul>
+									<li><a href="../store/store.html#footballMerchandise">Football Merchandise</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<div class="container-fluid">
 		<div class="row copyright">
